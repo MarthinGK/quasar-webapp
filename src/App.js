@@ -16,7 +16,7 @@ function App() {
             <Navbar />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Home/>} />
+              <Route exact path={process.env.PUBLIC_URL + '/'} element={<Home/>} />
               <Route path="/global" element={ <GlobalRigOverview key="global"/> } />
               <Route path="/test" element={ <RigTestTracker key="test"/> } />
               <Route path="/c01" element={ <RigOverview sheet="sheet=C01" title="Container 1" key="c01"/> } />
