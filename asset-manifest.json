@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/quasar-webapp/static/css/main.573f703a.chunk.css",
-    "main.js": "/quasar-webapp/static/js/main.43211b5d.chunk.js",
-    "main.js.map": "/quasar-webapp/static/js/main.43211b5d.chunk.js.map",
+    "main.js": "/quasar-webapp/static/js/main.d4bd16b3.chunk.js",
+    "main.js.map": "/quasar-webapp/static/js/main.d4bd16b3.chunk.js.map",
     "runtime-main.js": "/quasar-webapp/static/js/runtime-main.357e20f8.js",
     "runtime-main.js.map": "/quasar-webapp/static/js/runtime-main.357e20f8.js.map",
     "static/js/2.2deb5159.chunk.js": "/quasar-webapp/static/js/2.2deb5159.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.357e20f8.js",
     "static/js/2.2deb5159.chunk.js",
     "static/css/main.573f703a.chunk.css",
-    "static/js/main.43211b5d.chunk.js"
+    "static/js/main.d4bd16b3.chunk.js"
   ]
 }
