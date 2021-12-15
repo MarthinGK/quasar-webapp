@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/quasar-web-application/static/css/main.573f703a.chunk.css",
-    "main.js": "/quasar-web-application/static/js/main.26cadd54.chunk.js",
-    "main.js.map": "/quasar-web-application/static/js/main.26cadd54.chunk.js.map",
-    "runtime-main.js": "/quasar-web-application/static/js/runtime-main.470c22a7.js",
-    "runtime-main.js.map": "/quasar-web-application/static/js/runtime-main.470c22a7.js.map",
-    "static/js/2.e46537fb.chunk.js": "/quasar-web-application/static/js/2.e46537fb.chunk.js",
-    "static/js/2.e46537fb.chunk.js.map": "/quasar-web-application/static/js/2.e46537fb.chunk.js.map",
-    "static/js/3.f996d23b.chunk.js": "/quasar-web-application/static/js/3.f996d23b.chunk.js",
-    "static/js/3.f996d23b.chunk.js.map": "/quasar-web-application/static/js/3.f996d23b.chunk.js.map",
-    "index.html": "/quasar-web-application/index.html",
-    "static/css/main.573f703a.chunk.css.map": "/quasar-web-application/static/css/main.573f703a.chunk.css.map",
-    "static/js/2.e46537fb.chunk.js.LICENSE.txt": "/quasar-web-application/static/js/2.e46537fb.chunk.js.LICENSE.txt"
+    "main.css": "/quasar-webapp/static/css/main.573f703a.chunk.css",
+    "main.js": "/quasar-webapp/static/js/main.6019277a.chunk.js",
+    "main.js.map": "/quasar-webapp/static/js/main.6019277a.chunk.js.map",
+    "runtime-main.js": "/quasar-webapp/static/js/runtime-main.eb2a843a.js",
+    "runtime-main.js.map": "/quasar-webapp/static/js/runtime-main.eb2a843a.js.map",
+    "static/js/2.e46537fb.chunk.js": "/quasar-webapp/static/js/2.e46537fb.chunk.js",
+    "static/js/2.e46537fb.chunk.js.map": "/quasar-webapp/static/js/2.e46537fb.chunk.js.map",
+    "static/js/3.f996d23b.chunk.js": "/quasar-webapp/static/js/3.f996d23b.chunk.js",
+    "static/js/3.f996d23b.chunk.js.map": "/quasar-webapp/static/js/3.f996d23b.chunk.js.map",
+    "index.html": "/quasar-webapp/index.html",
+    "static/css/main.573f703a.chunk.css.map": "/quasar-webapp/static/css/main.573f703a.chunk.css.map",
+    "static/js/2.e46537fb.chunk.js.LICENSE.txt": "/quasar-webapp/static/js/2.e46537fb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.470c22a7.js",
+    "static/js/runtime-main.eb2a843a.js",
     "static/js/2.e46537fb.chunk.js",
     "static/css/main.573f703a.chunk.css",
-    "static/js/main.26cadd54.chunk.js"
+    "static/js/main.6019277a.chunk.js"
   ]
 }
