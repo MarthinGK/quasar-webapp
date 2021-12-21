@@ -61,7 +61,7 @@ export default function GlobalRigOverview() {
     const getRows = async () => {
 
       for( var i = 0, len = ethosEndpoints.length; i < len; i++ ) {
-        fetch(ethosEndpoints[i])
+        await fetch(ethosEndpoints[i])
         .then(response => response.json())
         .then(data => {                  
           console.log("data rigs: ", data.rigs)
@@ -103,7 +103,7 @@ export default function GlobalRigOverview() {
                       //const rigName = MACadd.slice(6);
 
 
-
+                      console.log("rows", json.table.rows);
                     if(conditionMap.has(json.table.rows[index].c[0].v)){
 
                       if((gpuMap.get(json.table.rows[index].c[0].v)) > 0 && (gpuMap.get(json.table.rows[index].c[0].v)) <= 4){

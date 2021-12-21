@@ -17,12 +17,12 @@ table {
 }
 
 td, th {
-  border: 1px solid #c0edff;
+  border: 1px solid #e2e9ff;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #e2fdff;
+  background-color: #dce4ff;
 }
 /* tr:hover {background-color: rgba(91, 168, 255, 0.432);} */

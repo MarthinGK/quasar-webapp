@@ -32,17 +32,22 @@ export default function RigOverview(props) {
                 const temp = data.substr(47).slice(0, -2);
                 const json = JSON.parse(temp);
                 const rows = json.table.rows;
+                console.log("rows:", rows);
+
+                // loop through all excel rows:
                 for (let index = 0; index < json.table.rows.length; index++) {
 
-                  
+                    // check if row have an error message
                     if(!(json.table.rows[index].c[11])){
                         // do nothing                       
                     }
                     
+                    // If no MAC-address, output "N/A" in that field instead:
                     else if(!(json.table.rows[index].c[0])){
                       ri.push([json.table.rows[index].c[3].v, "N/A", json.table.rows[index].c[11].v]);
                     }
                     
+                    // Else, output 1: IP, 2:, MAC-Address, 3: Rig Error Message
                     else{
                         ri.push([json.table.rows[index].c[3].v, json.table.rows[index].c[0].v, json.table.rows[index].c[11].v]);
                     }
