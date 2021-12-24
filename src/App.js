@@ -17,7 +17,7 @@ function App() {
           <div className="content">
             <Routes>
               <Route exact path={process.env.PUBLIC_URL + '/'} element={<Home/>} />
-              <Route exact path={process.env.PUBLIC_URL + '/global'} element={ <GlobalRigOverview key="global"/> } />
+              <Route exact path={process.env.PUBLIC_URL + '/global'} element={ <GlobalRigOverview/> } />
               <Route exact path={process.env.PUBLIC_URL + '/c01'} element={ <RigOverview sheet="sheet=C01" title="Container 1" key="c01"/> } />
               <Route exact path={process.env.PUBLIC_URL + '/c02'} element={ <RigOverview sheet="sheet=C02" title="Container 2" key="c02"/> } />
               <Route exact path={process.env.PUBLIC_URL + '/c03'} element={ <RigOverview sheet="sheet=C03" title="Container 3" key="c03"/> } />
