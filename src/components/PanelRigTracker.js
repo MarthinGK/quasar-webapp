@@ -71,25 +71,25 @@ export default function PanelRigOverview(props) {
             if(gpuMap.get(IpArray[index].replace("\r","")) > 4){
               ri.push([
                 IpArray[index],
+                greenCheck,
                 gpuMap.get(IpArray[index].replace("\r","")),
-                conditionMap.get(IpArray[index].replace("\r","")),
-                greenCheck
+                conditionMap.get(IpArray[index].replace("\r",""))
               ]);
             }
             else if(gpuMap.get(IpArray[index].replace("\r","")) <= 4 && gpuMap.get(IpArray[index].replace("\r","")) > 0 ){
               ri.push([
                 IpArray[index],
+                yellowCheck,
                 gpuMap.get(IpArray[index].replace("\r","")),
-                conditionMap.get(IpArray[index].replace("\r","")),
-                yellowCheck
+                conditionMap.get(IpArray[index].replace("\r",""))
               ]);
             }
             else {
               ri.push([
                 IpArray[index],
+                redCheck,
                 gpuMap.get(IpArray[index].replace("\r","")),
-                conditionMap.get(IpArray[index].replace("\r","")),
-                redCheck
+                conditionMap.get(IpArray[index].replace("\r",""))
               ]);
             }
           }
@@ -118,9 +118,9 @@ export default function PanelRigOverview(props) {
 
             ri.push([
               IpArray[index],
+              redCheck,
               "N/A",
-              "N/A",
-              redCheck
+              "N/A"
             ]);
           }
           //console.log("cndmap:", gpuMap.get(IpArray[index]))
@@ -141,9 +141,9 @@ export default function PanelRigOverview(props) {
           <thead>
             <tr>
                 <th>Rig IP</th>
+                <th>Rig Status</th>
                 <th>GPU Count</th>
                 <th>Rig Condition</th>
-                <th>Rig Status</th>
             </tr>
           </thead>
           <tbody>
