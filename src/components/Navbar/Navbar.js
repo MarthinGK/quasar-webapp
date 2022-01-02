@@ -37,74 +37,141 @@ const Navbar = () => {
 			</Link>
 
 			<Link to="/global" onClick={closeMenu}>
-				Global Panel
+				Global Panel Tracker
 			</Link>
 
 			<div class="navbar">
 				<div class="dropdown">
-					<button class="dropbtn">Spreadsheet Rigs
-					<i class="fa fa-caret-down"></i>
-					</button>
+						<button class="dropbtn">Panel Rigs
+							<i class="fa fa-caret-down"></i>
+						</button>
 					<div class="dropdown-content">
-						<Link to="/c01" onClick={closeMenu}>
+						<Link to="/c01p" onClick={closeMenu}>
 								C01
 						</Link>
-						<Link to="/c02" onClick={closeMenu}>
+						<Link to="/c02p" onClick={closeMenu}>
 								C02
 						</Link>
-						<Link to="/c04" onClick={closeMenu}>
+						<Link to="/c03p" onClick={closeMenu}>
+								C03
+						</Link>
+						<Link to="/c04p" onClick={closeMenu}>
 								C04
 						</Link>
-						<Link to="/c04" onClick={closeMenu}>
-								C04
-						</Link>
-						<Link to="/c08" onClick={closeMenu}>
+						<Link to="/c08p" onClick={closeMenu}>
 								C08
 						</Link>
-						<Link to="/c11" onClick={closeMenu}>
+						<Link to="/c11p" onClick={closeMenu}>
 								C11
 						</Link>
-						<Link to="/c12" onClick={closeMenu}>
+						<Link to="/c12p" onClick={closeMenu}>
 								C12
 						</Link>
-						<Link to="/c13" onClick={closeMenu}>
+						<Link to="/c13p" onClick={closeMenu}>
 								C13
 						</Link>
-						<Link to="/c14" onClick={closeMenu}>
+						<Link to="/c14p" onClick={closeMenu}>
 								C14
 						</Link>
-						<Link to="/c15" onClick={closeMenu}>
+						<Link to="/c15p" onClick={closeMenu}>
 								C15
 						</Link>
-						<Link to="/c16" onClick={closeMenu}>
+						<Link to="/c16p" onClick={closeMenu}>
 								C16
 						</Link>
-						<Link to="/c18" onClick={closeMenu}>
+						<Link to="/c18p" onClick={closeMenu}>
 								C18
 						</Link>
-						<Link to="/c19" onClick={closeMenu}>
+						<Link to="/c19p" onClick={closeMenu}>
 								C19
 						</Link>
-						<Link to="/c20" onClick={closeMenu}>
+						<Link to="/c20p" onClick={closeMenu}>
 								C20
 						</Link>
-						<Link to="/c21" onClick={closeMenu}>
+						<Link to="/c21p" onClick={closeMenu}>
 								C21
 						</Link>
-						<Link to="/c22" onClick={closeMenu}>
+						<Link to="/c22p" onClick={closeMenu}>
 								C22
 						</Link>
-						<Link to="/c23" onClick={closeMenu}>
+						<Link to="/c23p" onClick={closeMenu}>
 								C23
 						</Link>
-						<Link to="/c24" onClick={closeMenu}>
+						<Link to="/c24p" onClick={closeMenu}>
 								C24
 						</Link>
-						<Link to="/c25" onClick={closeMenu}>
+						<Link to="/c25p" onClick={closeMenu}>
 								C25
 						</Link>
 					</div>
 				</div> 
+
+				<div class="dropdown">
+						<button class="dropbtn">Spreadsheet Rigs
+							<i class="fa fa-caret-down"></i>
+						</button>
+					<div class="dropdown-content">
+						<Link to="/c01s" onClick={closeMenu}>
+								C01
+						</Link>
+						<Link to="/c02s" onClick={closeMenu}>
+								C02
+						</Link>
+						<Link to="/c03s" onClick={closeMenu}>
+								C03
+						</Link>
+						<Link to="/c04s" onClick={closeMenu}>
+								C04
+						</Link>
+						<Link to="/c08s" onClick={closeMenu}>
+								C08
+						</Link>
+						<Link to="/c11s" onClick={closeMenu}>
+								C11
+						</Link>
+						<Link to="/c12s" onClick={closeMenu}>
+								C12
+						</Link>
+						<Link to="/c13s" onClick={closeMenu}>
+								C13
+						</Link>
+						<Link to="/c14s" onClick={closeMenu}>
+								C14
+						</Link>
+						<Link to="/c15s" onClick={closeMenu}>
+								C15
+						</Link>
+						<Link to="/c16s" onClick={closeMenu}>
+								C16
+						</Link>
+						<Link to="/c18s" onClick={closeMenu}>
+								C18
+						</Link>
+						<Link to="/c19s" onClick={closeMenu}>
+								C19
+						</Link>
+						<Link to="/c20s" onClick={closeMenu}>
+								C20
+						</Link>
+						<Link to="/c21s" onClick={closeMenu}>
+								C21
+						</Link>
+						<Link to="/c22s" onClick={closeMenu}>
+								C22
+						</Link>
+						<Link to="/c23s" onClick={closeMenu}>
+								C23
+						</Link>
+						<Link to="/c24s" onClick={closeMenu}>
+								C24
+						</Link>
+						<Link to="/c25s" onClick={closeMenu}>
+								C25
+						</Link>
+					</div>
+			</div> 
+
+
 			</div>
 		</div>
 

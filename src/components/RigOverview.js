@@ -17,6 +17,7 @@ const endpoint = `${url}${ssid}${query1}`;
 export default function RigOverview(props) {
 
     const endpoint2 = `${url}${ssid}${query1}&${q2}&${props.sheet}`;
+    
 
     const [rigs, setRigs] = useState([[]]);
 

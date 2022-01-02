@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Styling.css';
+import Spinner from 'react-bootstrap/Spinner';
 
 const output = document.querySelector('.output');
 const url = 'https://docs.google.com/spreadsheets/d/';
@@ -16,6 +17,19 @@ const endpoint = `${url}${ssid}${query1}`;
 //const endpoint2 = `${url}${ssid}${query1}&${q2}&${sheet}`;
 
 export default function GlobalRigOverview() {
+
+    //const [rows, setRows] = usestate(null);
+    const [loading, setLoading] = useState(false);
+    const [rigs, setRigs] = useState([[]]);
+
+    useEffect(() => {
+      setLoading(true);
+        getRows();
+        
+    }, []);
+
+    let ri =  [[]]; 
+
 
     const excelEndpoints = `${url}${ssid}${query1}&${q2}&${sheet}`;
     const ethosEndpoints = [
@@ -50,16 +64,9 @@ export default function GlobalRigOverview() {
     const yellowCheck = '\u{1F7E1}';
     const redCheck = '\u{1F534}';
 
-    const [rigs, setRigs] = useState([[]]);
-
-    useEffect(() => {
-        getRows();
-    }, []);
-
-    let ri =  [[]]; 
 
     const getRows = async () => {
-
+      
       for( var i = 0, len = ethosEndpoints.length; i < len; i++ ) {
         await fetch(ethosEndpoints[i])
         .then(response => response.json())
@@ -74,6 +81,9 @@ export default function GlobalRigOverview() {
           }
         });
       }
+
+
+
       await fetch(excelEndpoints)
           .then(response => response.text())
           .then(data => {
@@ -103,7 +113,6 @@ export default function GlobalRigOverview() {
                       //const rigName = MACadd.slice(6);
 
 
-                      console.log("rows", json.table.rows);
                     if(conditionMap.has(json.table.rows[index].c[0].v)){
 
                       if((gpuMap.get(json.table.rows[index].c[0].v)) > 0 && (gpuMap.get(json.table.rows[index].c[0].v)) <= 4){
@@ -160,12 +169,13 @@ export default function GlobalRigOverview() {
                       ]);
                     }
                   }
+                  console.log("rows", json.table.rows);
+
               }
 
-
-
               setRigs(ri.filter(null_errors => null_errors != null));
-          }); 
+          })
+          setLoading(false); 
     };
 
     return(
@@ -185,27 +195,25 @@ export default function GlobalRigOverview() {
             </tr>
           </thead>
           <tbody>
-            {rigs.slice(1, rigs.length).map((item, index) => {
+            {loading ? <h1>LOADING</h1>
+            :
+            rigs.slice(1, rigs.length).map((item, index) => {
               return (
-                <tr key={index}>
-                  <td>{item[0]}</td>
-                  <td>{item[1]}</td>
-                  <td>{item[2]}</td>
-                  <td>{item[3]}</td>
-                  <td>{item[4]}</td>
-                  <td>{item[5]}</td>
-                  <td>{item[6]}</td>
-                </tr>
+                  <tr key={index}>
+                    <td>{item[0]}</td>
+                    <td>{item[1]}</td>
+                    <td>{item[2]}</td>
+                    <td>{item[3]}</td>
+                    <td>{item[4]}</td>
+                    <td>{item[5]}</td>
+                    <td>{item[6]}</td>
+                  </tr>
               );
-            })}
+            })
+          }
           </tbody>
         </table>
         </div>
     </div>
-
-
-
-
-
     )
 }
