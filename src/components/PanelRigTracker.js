@@ -3,9 +3,9 @@ import './Styling.css';
 //import "./IpAdresses.txt";
 
 const output = document.querySelector('.output');
-const url = 'https://docs.google.com/spreadsheets/d/';
+
 const ssid = '1ikr2pmfjKL7vgJe71OXn7SCbvUU7QCtjLLdA_dubQ8g';
-const gid = '/edit#gid=922581844';
+
 const query1 = `/gviz/tq?`;
 const sheet = "sheet=Global rig tracker"
 
@@ -14,14 +14,10 @@ const ethos = ".ethosdistro.com/?json=yes"
 
 const q2 = 'tqx=out:json';
 
-
-const endpoint = `${url}${ssid}${query1}`;
-
 //const endpoint2 = `${url}${ssid}${query1}&${q2}&${sheet}`;
 
 export default function PanelRigOverview(props) {
 
-    const excelEndpoints = `${url}${ssid}${query1}&${q2}&${sheet}`;
     const ethosEndpoints = `${http}${props.label}${ethos}`;
 
     var conditionMap = new Map();
@@ -53,7 +49,6 @@ export default function PanelRigOverview(props) {
           conditionMap.set(data.rigs[key]["ip"], data.rigs[key]["condition"]);
           gpuMap.set(data.rigs[key]["ip"], data.rigs[key]["miner_instance"]);
           //uptimeMap.set(key, (data.rigs[key]["uptime"]/60/60/24).toFixed(2));
-
         }
       });
 

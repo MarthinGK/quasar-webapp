@@ -61,6 +61,9 @@ const Navbar = () => {
 						<Link to="/c08p" onClick={closeMenu}>
 								C08
 						</Link>
+						<Link to="/c10p" onClick={closeMenu}>
+								C10
+						</Link>
 						<Link to="/c11p" onClick={closeMenu}>
 								C11
 						</Link>
@@ -125,6 +128,9 @@ const Navbar = () => {
 						</Link>
 						<Link to="/c08s" onClick={closeMenu}>
 								C08
+						</Link>
+						<Link to="/c10s" onClick={closeMenu}>
+								C10
 						</Link>
 						<Link to="/c11s" onClick={closeMenu}>
 								C11
